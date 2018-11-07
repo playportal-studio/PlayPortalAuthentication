@@ -53,5 +53,55 @@
             </objects>
             <point key="canvasLocation" x="1290" y="27"/>
         </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="zjp-pN-jpg">
+            <objects>
+                <viewController storyboardIdentifier="profile" id="nte-Ux-BpY" customClass="ProfileViewController" customModule="PlayPortalAuthentication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ASu-EA-FL0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tor-Dq-j7D">
+                                <rect key="frame" x="0.0" y="20" width="375" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="fUy-vN-BlZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zvl-0m-Dac">
+                                <rect key="frame" x="137.5" y="70" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Hgy-Xn-ZkK"/>
+                                    <constraint firstAttribute="width" constant="100" id="TTc-WX-iSy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjD-bP-Slh">
+                                <rect key="frame" x="166.5" y="186" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zjD-bP-Slh" firstAttribute="centerX" secondItem="zvl-0m-Dac" secondAttribute="centerX" id="4XZ-gj-b8x"/>
+                            <constraint firstItem="Tor-Dq-j7D" firstAttribute="top" secondItem="EHK-kS-FLQ" secondAttribute="top" id="Dqe-sh-VFU"/>
+                            <constraint firstItem="zvl-0m-Dac" firstAttribute="centerX" secondItem="Tor-Dq-j7D" secondAttribute="centerX" id="LTq-Tz-8It"/>
+                            <constraint firstItem="EHK-kS-FLQ" firstAttribute="trailing" secondItem="Tor-Dq-j7D" secondAttribute="trailing" id="Zcy-BH-Gr1"/>
+                            <constraint firstItem="zjD-bP-Slh" firstAttribute="top" secondItem="zvl-0m-Dac" secondAttribute="bottom" constant="16" id="bFz-UV-lDp"/>
+                            <constraint firstItem="Tor-Dq-j7D" firstAttribute="leading" secondItem="EHK-kS-FLQ" secondAttribute="leading" id="fVW-YG-yPq"/>
+                            <constraint firstItem="zvl-0m-Dac" firstAttribute="top" secondItem="Tor-Dq-j7D" secondAttribute="top" constant="50" id="sUc-qI-6L0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EHK-kS-FLQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="coverPhotoImageView" destination="Tor-Dq-j7D" id="4Pb-PD-H6p"/>
+                        <outlet property="handleLabel" destination="zjD-bP-Slh" id="02o-a7-mJw"/>
+                        <outlet property="profilePicImageView" destination="zvl-0m-Dac" id="dPk-yV-ISI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ba-vO-gxZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1925.5999999999999" y="27.436281859070466"/>
+        </scene>
     </scenes>
 </document>

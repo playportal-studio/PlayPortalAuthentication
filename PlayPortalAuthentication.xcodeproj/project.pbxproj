@@ -14,6 +14,7 @@
 		1C5DAFF62193806E00A73FC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5DAFF42193806E00A73FC1 /* LaunchScreen.storyboard */; };
 		1C5DAFFE2193823700A73FC1 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5DAFFD2193823700A73FC1 /* Config.swift */; };
 		1C5DB0002193847000A73FC1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5DAFFF2193847000A73FC1 /* LoginViewController.swift */; };
+		1C5DB0022193939D00A73FC1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5DB0012193939D00A73FC1 /* ProfileViewController.swift */; };
 		A55928ACA2A238EB5149EC18 /* Pods_PlayPortalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6917EF92FB6F41E53DA96149 /* Pods_PlayPortalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		1C5DAFF72193806E00A73FC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C5DAFFD2193823700A73FC1 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		1C5DAFFF2193847000A73FC1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1C5DB0012193939D00A73FC1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6917EF92FB6F41E53DA96149 /* Pods_PlayPortalAuthentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayPortalAuthentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C230A10E3F8ABF2D5903F0 /* Pods-PlayPortalAuthentication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayPortalAuthentication.release.xcconfig"; path = "Target Support Files/Pods-PlayPortalAuthentication/Pods-PlayPortalAuthentication.release.xcconfig"; sourceTree = "<group>"; };
 		E51D299BDC8EB4314B6CC062 /* Pods-PlayPortalAuthentication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayPortalAuthentication.debug.xcconfig"; path = "Target Support Files/Pods-PlayPortalAuthentication/Pods-PlayPortalAuthentication.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				1C5DAFF72193806E00A73FC1 /* Info.plist */,
 				1C5DAFFD2193823700A73FC1 /* Config.swift */,
 				1C5DAFFF2193847000A73FC1 /* LoginViewController.swift */,
+				1C5DB0012193939D00A73FC1 /* ProfileViewController.swift */,
 			);
 			path = PlayPortalAuthentication;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			files = (
 				1C5DB0002193847000A73FC1 /* LoginViewController.swift in Sources */,
 				1C5DAFEE2193806D00A73FC1 /* ViewController.swift in Sources */,
+				1C5DB0022193939D00A73FC1 /* ProfileViewController.swift in Sources */,
 				1C5DAFEC2193806D00A73FC1 /* AppDelegate.swift in Sources */,
 				1C5DAFFE2193823700A73FC1 /* Config.swift in Sources */,
 			);

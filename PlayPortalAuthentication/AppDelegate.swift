@@ -17,7 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PlayPortalLoginDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         PlayPortalAuth.shared.configure(forEnvironment: env, withClientId: clientId, andClientSecret: clientSecret, andRedirectURI: redirect)
         PlayPortalAuth.shared.isAuthenticated(loginDelegate: self) { error, userProfile in
-            if let error = error {
+            if let userProfile = userProfile {
+                guard let profile = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "profile") as? ProfileViewController else {
+                    return
+                }
+                profile.userProfile = userProfile
+                self.window?.rootViewController = profile
+            } else if let error = error {
                 print("An error occurred during authentication: \(error)")
             } else if userProfile == nil {
                 guard let login = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "login") as? LoginViewController else {
