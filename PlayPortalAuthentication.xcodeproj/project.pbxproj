@@ -12,6 +12,7 @@
 		1C5DAFF12193806D00A73FC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5DAFEF2193806D00A73FC1 /* Main.storyboard */; };
 		1C5DAFF32193806E00A73FC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C5DAFF22193806E00A73FC1 /* Assets.xcassets */; };
 		1C5DAFF62193806E00A73FC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5DAFF42193806E00A73FC1 /* LaunchScreen.storyboard */; };
+		A55928ACA2A238EB5149EC18 /* Pods_PlayPortalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6917EF92FB6F41E53DA96149 /* Pods_PlayPortalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		1C5DAFF22193806E00A73FC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C5DAFF52193806E00A73FC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C5DAFF72193806E00A73FC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6917EF92FB6F41E53DA96149 /* Pods_PlayPortalAuthentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayPortalAuthentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83C230A10E3F8ABF2D5903F0 /* Pods-PlayPortalAuthentication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayPortalAuthentication.release.xcconfig"; path = "Target Support Files/Pods-PlayPortalAuthentication/Pods-PlayPortalAuthentication.release.xcconfig"; sourceTree = "<group>"; };
+		E51D299BDC8EB4314B6CC062 /* Pods-PlayPortalAuthentication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayPortalAuthentication.debug.xcconfig"; path = "Target Support Files/Pods-PlayPortalAuthentication/Pods-PlayPortalAuthentication.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A55928ACA2A238EB5149EC18 /* Pods_PlayPortalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A7EE67367140DB6AF41DAC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E51D299BDC8EB4314B6CC062 /* Pods-PlayPortalAuthentication.debug.xcconfig */,
+				83C230A10E3F8ABF2D5903F0 /* Pods-PlayPortalAuthentication.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		1C5DAFDF2193806D00A73FC1 = {
 			isa = PBXGroup;
 			children = (
 				1C5DAFEA2193806D00A73FC1 /* PlayPortalAuthentication */,
 				1C5DAFE92193806D00A73FC1 /* Products */,
+				1A7EE67367140DB6AF41DAC9 /* Pods */,
+				5475C9F62EFD1A1635BE6768 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +81,14 @@
 			path = PlayPortalAuthentication;
 			sourceTree = "<group>";
 		};
+		5475C9F62EFD1A1635BE6768 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6917EF92FB6F41E53DA96149 /* Pods_PlayPortalAuthentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +96,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C5DAFFA2193806E00A73FC1 /* Build configuration list for PBXNativeTarget "PlayPortalAuthentication" */;
 			buildPhases = (
+				68EA925F8BD1BCD1D2DED117 /* [CP] Check Pods Manifest.lock */,
 				1C5DAFE42193806D00A73FC1 /* Sources */,
 				1C5DAFE52193806D00A73FC1 /* Frameworks */,
 				1C5DAFE62193806D00A73FC1 /* Resources */,
@@ -129,6 +155,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68EA925F8BD1BCD1D2DED117 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlayPortalAuthentication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C5DAFE42193806D00A73FC1 /* Sources */ = {
@@ -280,6 +331,7 @@
 		};
 		1C5DAFFB2193806E00A73FC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E51D299BDC8EB4314B6CC062 /* Pods-PlayPortalAuthentication.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +350,7 @@
 		};
 		1C5DAFFC2193806E00A73FC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83C230A10E3F8ABF2D5903F0 /* Pods-PlayPortalAuthentication.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
