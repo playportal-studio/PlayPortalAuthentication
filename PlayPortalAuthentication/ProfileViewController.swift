@@ -25,4 +25,8 @@ class ProfileViewController: UIViewController {
         coverPhotoImageView.playPortalCoverPhoto(forImageId: userProfile.coverPhoto, nil)
         profilePicImageView.playPortalProfilePic(forImageId: userProfile.profilePic, nil)
     }
+    
+    @IBAction func logoutTapped(_ sender: UIBarButtonItem) {
+        PlayPortalAuth.shared.logout()
+    }
 }

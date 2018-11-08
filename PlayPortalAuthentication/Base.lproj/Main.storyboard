@@ -62,20 +62,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tor-Dq-j7D">
-                                <rect key="frame" x="0.0" y="20" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="fUy-vN-BlZ"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zvl-0m-Dac">
-                                <rect key="frame" x="137.5" y="70" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="114" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Hgy-Xn-ZkK"/>
                                     <constraint firstAttribute="width" constant="100" id="TTc-WX-iSy"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjD-bP-Slh">
-                                <rect key="frame" x="166.5" y="186" width="42" height="21"/>
+                                <rect key="frame" x="166.5" y="230" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -84,8 +84,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zjD-bP-Slh" firstAttribute="centerX" secondItem="zvl-0m-Dac" secondAttribute="centerX" id="4XZ-gj-b8x"/>
-                            <constraint firstItem="Tor-Dq-j7D" firstAttribute="top" secondItem="EHK-kS-FLQ" secondAttribute="top" id="Dqe-sh-VFU"/>
                             <constraint firstItem="zvl-0m-Dac" firstAttribute="centerX" secondItem="Tor-Dq-j7D" secondAttribute="centerX" id="LTq-Tz-8It"/>
+                            <constraint firstItem="Tor-Dq-j7D" firstAttribute="top" secondItem="EHK-kS-FLQ" secondAttribute="top" id="LXv-oi-sOF"/>
                             <constraint firstItem="EHK-kS-FLQ" firstAttribute="trailing" secondItem="Tor-Dq-j7D" secondAttribute="trailing" id="Zcy-BH-Gr1"/>
                             <constraint firstItem="zjD-bP-Slh" firstAttribute="top" secondItem="zvl-0m-Dac" secondAttribute="bottom" constant="16" id="bFz-UV-lDp"/>
                             <constraint firstItem="Tor-Dq-j7D" firstAttribute="leading" secondItem="EHK-kS-FLQ" secondAttribute="leading" id="fVW-YG-yPq"/>
@@ -93,6 +93,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EHK-kS-FLQ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6Hc-8H-Dj6">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="kjn-mc-bFC">
+                            <connections>
+                                <action selector="logoutTapped:" destination="nte-Ux-BpY" id="fa3-t1-O92"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="coverPhotoImageView" destination="Tor-Dq-j7D" id="4Pb-PD-H6p"/>
                         <outlet property="handleLabel" destination="zjD-bP-Slh" id="02o-a7-mJw"/>
@@ -100,6 +107,24 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ba-vO-gxZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2864.8000000000002" y="27.436281859070466"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PtB-9Z-mmc">
+            <objects>
+                <navigationController storyboardIdentifier="navigation" automaticallyAdjustsScrollViewInsets="NO" id="tAe-2t-ARQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MYv-Lc-IZp">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nte-Ux-BpY" kind="relationship" relationship="rootViewController" id="tZX-v4-15w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nYb-IY-IGa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1925.5999999999999" y="27.436281859070466"/>
         </scene>
