@@ -1,1 +1,1 @@
-iOS demonstrating playPORTAL authentication.
+Simple Swift app demonstrating playPORTAL authentication.
